@@ -55,7 +55,7 @@ namespace :deploy do
  
   task :symlink_config, :roles => :app do
     run "ln -s #{shared_path}/database.yml #{latest_release}/config/database.yml"
-    run "[ -f #{shared_path}/config.yml ] && ln -s #{shared_path}/config.yml #{latest_release}/config/config.yml; true"
+    run "[ -f #{shared_path}/secrets.yml ] && ln -s #{shared_path}/secrets.yml #{latest_release}/config/secrets.yml; true"
   end
  
   desc "Create database yaml in shared path"
