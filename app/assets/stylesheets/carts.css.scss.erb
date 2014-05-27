@@ -1,0 +1,168 @@
+// Place all the styles related to the Carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.carts {
+    
+    .cart_table {
+        
+         .item_price, .total_line {
+            text-align: right;
+          }
+          .total_line .total_cell {
+            font-family: 'Helvetica Neue';
+            font-weight: bold;
+            font-size: 30px;
+            border-bottom: 4px solid #e8e6e6;
+            padding: 0;
+          }
+          
+          .total_line {
+            height: 100px;
+          }
+          
+        .border {
+            border-bottom: 2px dashed #e8e6e6;
+            display: inline-block;
+        }
+        
+        table {
+            width: 1140px;
+        }
+        
+        img {
+            width: 120px;
+            margin-left: 30px;
+        }
+        
+        td.quantity {
+            font-family: 'Helvetica Neue';
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            /* Safari */
+            -webkit-transform: rotate(-90deg);
+            
+            /* Firefox */
+            -moz-transform: rotate(-90deg);
+            
+            /* IE */
+            -ms-transform: rotate(-90deg);
+            
+            /* Opera */
+            -o-transform: rotate(-90deg);
+        }
+        
+        td.quantity_bg {
+            width: 70px;
+            height: 71px;
+            background: url("<%= asset_path('cart_bg.png')%>") no-repeat;
+            background-position: center;
+            padding: 0;
+            
+            span {
+                position: absolute;
+                margin-left: 28px;
+                margin-top: -10px;
+                width: 70px;
+                height: 71px;
+                font-family: 'Helvetica Neue';
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        
+        .item_price {
+            padding-left: 570px;
+            font-family: 'Helvetica Neue';
+            font-weight: 300;
+            font-size: 20px;
+            float:right;
+            margin-top: -100px;
+        }
+        
+        tr {
+            width: 1100px;
+            height: 180px;
+            border-bottom: 3px solid;
+            border-color: black;
+            padding-top: 10px;
+            padding-left: 40px;
+        }
+    }
+    
+  #delete_line {
+    input {
+    background: url("<%= asset_path('delete.png')%>");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    font-size:0px;
+    margin-right: 30px;
+    }
+    
+    input:hover {
+    background: url("<%= asset_path('delete.png')%>");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    font-size:0px;
+    margin-right: 30px;
+    cursor: pointer;
+    }
+  }
+  
+  .checkout {
+    display: inline-block;
+    float: right;
+    
+        input {
+        background:none;
+        width: 250px;
+        height: 40px;
+        border: solid 1px #3ab3d1;
+        border-radius: 3px;
+        font-size:18px;
+        font-family: 'Helvetica Neue';
+        font-weight: 400;
+        font-style: italic;
+        color:#3ab3d1;
+        margin-top: 10px;
+        margin-left: 20px;
+        text-transform: uppercase;
+      }
+      
+      input:hover {
+        color: #2a95b0;
+        border-color: #2a95b0;
+        cursor: pointer;
+      }
+  }
+
+    .but_cart {
+        display: inline-block;
+        float: left;
+  
+        input {
+        background:none;
+        width: 250px;
+        height: 40px;
+        border: solid 1px #9d9b9b;
+        border-radius: 3px;
+        font-size:20px;
+        font-family: 'Helvetica Neue';
+        font-weight: 400;
+        font-style: italic;
+        color:#9d9b9b;
+        margin-top: 10px;
+      }
+      
+      input:hover {
+        color: #2a95b0;
+        border-color: #2a95b0;
+        cursor: pointer;
+      }
+  }
+
+}

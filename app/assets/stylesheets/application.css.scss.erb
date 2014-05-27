@@ -1,0 +1,240 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 93px;
+    
+    .push {
+	height: 94px;
+    }
+    
+    #footer {
+	position: absolute;
+	background: url("<%= asset_path('footer.png')%>");
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 93px;
+    }
+}
+
+#banner {
+  height: 100px;  
+  border-bottom: 2px solid;
+  font: "Helvetica Neue", serif;
+  color: #e5e5e5;
+  text-align: center;
+
+  img {
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+    
+  #nav {
+    margin-top: 50px;
+    float: right;
+    border-top: 1px solid;
+    width: 1000px;
+    padding-right: 10px;
+    padding-top: 2px;
+	
+    ul.social {
+      padding: 0;
+      float: right;
+      height: 37px;
+      margin: 0;
+      margin-top: -40px;
+      margin-right: -10px;
+      
+      li {
+        list-style: none;
+        
+      
+        .fb {
+          padding: 0px;
+          background: url("<%= asset_path('fb.png')%>");
+          background-repeat: no-repeat;
+          height: 37px;
+          width: 44px;
+          display: inline-block;
+          
+          span {
+            display: none;
+          }
+        }
+        
+        .fb:hover {
+          padding: 0px;
+          background: url("<%= asset_path('fb.png')%>");
+          background-repeat: no-repeat;
+          height: 37px;
+          width: 44px;
+          display: inline-block;
+        }
+        
+        .twitter {
+          padding: 0px;
+          background: url("<%= asset_path('twitter.png')%>");
+          background-repeat: no-repeat;
+          height: 37px;
+          width: 44px;
+          display: inline-block;
+          
+          span {
+            display: none;
+          }
+        }
+        
+        .twitter:hover {
+          padding: 0px;
+          background: url("<%= asset_path('twitter.png')%>");
+          background-repeat: no-repeat;
+          height: 37px;
+          width: 44px;
+          display: inline-block;
+        }
+        
+        .cart {
+          padding: 0px;
+          background: url("<%= asset_path('cart.png')%>");
+          background-repeat: no-repeat;
+          height: 37px;
+          width: 117px;
+          display: inline-block;
+          
+          span {
+            display: none;
+          }
+        }
+        
+        .cart:hover {
+          padding: 0px;
+          background: url("<%= asset_path('cart.png')%>");
+          background-repeat: no-repeat;
+          height: 37px;
+          width: 117px;
+          display: inline-block;
+        } 
+      }
+    }
+    
+    ul {
+      padding: 0;
+      float: right;
+      li {
+        list-style: none;
+        display: inline;
+        a {
+          text-decoration: none;  
+          color: #0f0f0f;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-family: "Helvetica Neue";
+          font-weight: 200;
+          padding-left: 30px;
+        }
+        
+        a:hover {
+            color: #3fb8eb;
+            background: none;
+        }
+      }
+    }
+  }
+}
+
+#notice {
+  color: #000 !important;
+  border: 2px solid #2a95b0;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: white;
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#wrapper {
+
+  #main {
+    background: white;
+  }
+}
+
+//#START:form
+.depot_form {
+  fieldset {
+    background: #efe;
+
+    legend {
+      color: #dfd;
+      background: #141;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+  }
+
+  form {
+    label {
+      width: 5em;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+
+    select, textarea, input {
+      margin-left: 70px;
+    }
+
+    .submit {
+      margin-left: 4em;
+    }
+
+    br {
+      display: none
+    }
+  }
+}
+//#END:form
+
+#add_but{
+    input {
+  background:none;
+  width: 250px;
+  height: 40px;
+  border: solid 1px #3ab3d1;
+  border-radius: 3px;
+  font-size:20px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-style: italic;
+  color:#3ab3d1;
+  }
+  
+  input:hover {
+    color: #2a95b0;
+    border-color: #2a95b0;
+    cursor: pointer;
+  }
+}
