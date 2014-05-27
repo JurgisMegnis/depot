@@ -1,0 +1,15 @@
+<% if notice %>
+  <p><%= notice %></p>
+<% end %>
+
+<% @articles.each do |article| %>
+<div class="entry_article">
+  <%= link_to image_tag(article.image_url), article_path(id: article.id) %>
+  <div class="title_bg">
+    
+  </div>
+  <div class="title">
+    <p><%= article.title %></p>
+  </div>
+</div>
+<% end %>

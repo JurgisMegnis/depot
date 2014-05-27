@@ -1,0 +1,16 @@
+<div id="show">
+  <%= image_tag(@product.image_url) %>
+  <div id="desc">
+    <p>
+      <%= @product.description %>
+    </p>
+  </div>
+  <div id="price">
+    <p>
+      <%= number_to_currency(@product.price, :unit => "EUR ") %>
+    </p>
+  </div>
+  <div id="add_but">
+    <%= button_to 'Add to Cart', line_items_path(product_id: @product) %>
+  </div>
+</div>

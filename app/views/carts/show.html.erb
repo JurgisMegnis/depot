@@ -1,0 +1,27 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<div class="cart_table">
+  <table>
+    <% for item in @cart.line_items %>
+      <tr class="border">
+        <td id="delete_line"><%= button_to 'Delete Line Item', item, :method => :delete, :confirm => 'Are You Sure' %></td>
+        <td><%= image_tag(item.product.image_url) %></td>
+        <td class="quantity">Quantity </td>
+        <td class="quantity_bg"><span><%= item.quantity %></span></td>
+        <td class="item_price"><%= number_to_currency(item.total_price, :unit => "EUR ") %></td>
+      </tr>
+    <% end %>
+
+      <tr class="total_line">
+      <td class="total_cell"><%= number_to_currency(@cart.total_price, :unit => "EUR ") %></td>
+    </tr>
+  </table>
+</div>
+<div class="checkout">
+  <%= button_to "To Checkout!", new_order_path, method: :get %>
+</div>
+<div class="but_cart">
+  <%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>

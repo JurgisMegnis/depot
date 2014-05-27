@@ -1,0 +1,150 @@
+// Place all the styles related to the About controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about {
+    
+    img {
+        display: inline-block;
+    }
+    
+    .design {
+        width: 500px;
+        height: auto;
+        display: inline-block;
+        position: absolute;
+        margin-top: 50px;
+        
+        .dot {
+            background: url("dot.png");
+            width: 9px;
+            height: 9px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+        
+        h1 {
+            font-family: 'Helvetica Neue';
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: black;
+            display: inline-block;
+        }
+        
+        p {
+            font-family: 'Helvetica Neue';
+            font-weight: 200;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 150%;
+        }
+    }
+    
+    .produce {
+        width: 500px;
+        height: auto;
+        display: inline-block;
+        position: absolute;
+        margin-top: 320px;
+        
+        .dot {
+            background: url("dot.png");
+            width: 9px;
+            height: 9px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+        
+        h1 {
+            font-family: 'Helvetica Neue';
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: black;
+            display: inline-block;
+        }
+        
+        p {
+            font-family: 'Helvetica Neue';
+            font-weight: 200;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 150%;
+        }
+    }
+    
+    .love {
+        width: 500px;
+        height: auto;
+        display: inline-block;
+        position: absolute;
+        margin-top: 525px;
+        
+        .dot {
+            background: url("dot.png");
+            width: 9px;
+            height: 9px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+        
+        h1 {
+            font-family: 'Helvetica Neue';
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: black;
+            display: inline-block;
+        }
+        
+        p {
+            font-family: 'Helvetica Neue';
+            font-weight: 200;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 150%;
+        }
+    }
+    
+    .people {
+        width: 500px;
+        height: auto;
+        display: inline-block;
+        position: absolute;
+        margin-top: 760px;
+        
+        .dot {
+            background: url("dot.png");
+            width: 9px;
+            height: 9px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+        
+        h1 {
+            font-family: 'Helvetica Neue';
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: black;
+            display: inline-block;
+        }
+        
+        p {
+            font-family: 'Helvetica Neue';
+            font-weight: 200;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 150%;
+        }
+    }
+}

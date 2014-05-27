@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jackalope</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class='<%= controller.controller_name %>'>
+  <div id= "banner">
+    <%= image_tag("logo.png") %>
+    <div id="nav">
+      <ul class="social">
+        <li><a href="#" class="fb"><span>facebook</span></a></li>
+        <li><a href="#" class="twitter"><span>twitter</span></a></li>
+        <li><a href="#" class="cart"><span>cart</span></a></li>
+      </ul>
+      <ul>
+        <li><a href="http://localhost:3000/">Home</a></li>
+        <li><a href="/store/index">Shop</a></li>
+        <li><a href="/blog/index">Blog</a></li>
+        <li><a href="/about/index">About us</a></li>
+        <li><a href="/inquiries/new">Contact</a></li>
+      </ul>  
+        <% if session[:user_id] %>
+        <ul>
+          <li><%= link_to 'Articles', articles_path %></li>
+          <li><%= link_to 'Orders', orders_path %></li>
+          <li><%= link_to 'Products', products_path %></li>
+          <li><%= link_to 'Users', users_path %></li>
+        </ul>
+        <%= button_to 'Logout', logout_path, method: :delete %> <% end %>
+    </div>
+  </div>
+  <div id="wrapper">
+    <div id="main">
+    <%= yield %>
+    </div>
+  </div>
+<div class="push">
+  
+</div>
+<div id="footer">
+  
+</div>
+</body>
+</html>

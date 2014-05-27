@@ -1,0 +1,71 @@
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.depot_form {
+    margin-top: 10px;
+    
+    legend {
+        position: absolute;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: bold;
+        /* Safari */
+        -webkit-transform: rotate(-90deg);
+            
+        /* Firefox */
+        -moz-transform: rotate(-90deg);
+            
+        /* IE */
+        -ms-transform: rotate(-90deg);
+            
+        /* Opera */
+        -o-transform: rotate(-90deg);
+        margin-left: -30px;
+        margin-top: 70px;
+    }
+    
+    label {
+        margin-left: 70px;
+    }
+    
+    input {
+        -moz-box-shadow:none;
+        -webkit-box-shadow:none;
+        -o-box-shadow:none;
+        box-shadow:none;
+        border-radius: 2px;
+        border: 1px solid;
+        border-color: #3e3f3f;
+        font-family: 'Helvetica Neue';
+        font-size: 14px;
+        padding: 5px;
+        width: 200px;
+        margin-left: 70px;
+    }
+    
+    .login {
+    
+        input {
+            margin-top: 10px;
+            background:none;
+            width: 210px;
+            height: 30px;
+            border: solid 1px #3ab3d1;
+            border-radius: 3px;
+            font-size:20px;
+            font-family: 'Helvetica Neue';
+            font-weight: 400;
+            font-style: italic;
+            color:#3ab3d1;
+            padding: 0;
+            margin-left: 70px;
+        }
+        
+        input:hover {
+            color: #2a95b0;
+            border-color: #2a95b0;
+            cursor: pointer;
+        }
+    }
+}
